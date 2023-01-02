@@ -1,16 +1,3 @@
-prefix=@prefix@
-exec_prefix=@exec_prefix@
-libdir=@libdir@
-includedir=@includedir@
-
-epoxy_has_glx=@epoxy_has_glx@
-epoxy_has_egl=@epoxy_has_egl@
-epoxy_has_wgl=@epoxy_has_wgl@
-
-Name: epoxy
-Description: epoxy GL dispatch Library
-Version: @PACKAGE_VERSION@
-Cflags: -I${includedir}
-Libs: -L${libdir} -lepoxy
-Libs.private: @DLOPEN_LIBS@
-Requires.private: @GL_REQS@
+version https://git-lfs.github.com/spec/v1
+oid sha256:bf08a9a5d17ed5e639df2ff1d7baf1207c62a458f9d05a3f8c56ae4b4433af2d
+size 358

@@ -1,16 +1,3 @@
-#! /bin/sh
-
-srcdir=`dirname $0`
-test -z "$srcdir" && srcdir=.
-
-ORIGDIR=`pwd`
-cd "$srcdir"
-
-mkdir m4 || exit 1
-
-autoreconf -v --install || exit $?
-cd "$ORIGDIR" || exit $?
-
-if test -z "$NOCONFIGURE"; then
-    exec "$srcdir/configure" "$@"
-fi
+version https://git-lfs.github.com/spec/v1
+oid sha256:dc6c779d4d9d410ddf26b2e1fa9a373df9ced2d04885fe9cdbf9094fa097cfc0
+size 241
